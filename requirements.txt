@@ -1,0 +1,4 @@
+"""Requirements for Resume Builder"""
+python>=3.8
+pytest>=7.0
+python-dateutil>=2.8.2
