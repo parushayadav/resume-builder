@@ -1,0 +1,88 @@
+CHIDVILAS PARUSHA
+parushacv@gmail.com +1 9196415039
+___________________________________________________________________________________________________________
+PROFESSIONAL SUMMARY
+•	Experienced handling data with 5+ years of industry experience in the field of IT, with focus on Analytics, Design and development of Data Warehousing, Modeling, Business Intelligence Applications, Testing, Requirement Gathering, virtualization, and Visualization.
+•	Strong experience with Business and data Analysis, data profiling, Data Migration, Data Conversion, Data Quality, Change Management, Configuration Management. 
+•	Well-versed in ecosystems like Linux and Windows capable of executing Real-time and Batch jobs through data streams to Spark Streaming. Experienced in job/workflow scheduling and monitoring tools like Denodo scheduler, and Autosys.
+•	Expert in developing UI using JavaScript, HTML, CSS, Java 8+ supporting front end and developing backend of the applications. Experienced in writing UNIX shell scripting, python programming, Java programming, excellent with SQL, PL/SQL queries and XML.
+•	Strong hands-on experience with Azure Data Factory, Azure Data Bricks and Azure Synapse and Nomura Private cloud. Expert in Working with Python and Java for computational analytics and performing advanced analytical applications alongside databases including Oracle, MySQL, SQL Server, Snowflake.
+•	Experienced in Normalization and De-normalization techniques to enhance database performance in OLTP, OLAP, and Data Warehouse/Data Mart environments. Designed standards for various data structures and relationships, including Batch processes, Import/Export, Backup, and Database Monitoring.
+•	Furthermore, Strong background in performing data transfer activities between various RDBMS. Experienced in Data Scrubbing/Cleansing, Data Quality, Data Mapping, Data Profiling, and Data Validation within ETL with Informatica, SSIS, Talend.
+
+TECHNICAL SKILLS: 
+Programming Languages – C, Python, Java, JavaScript, Shell Scripting, SQL, XML, Bash scripting
+Big Data Platforms – Apache Spark, Hadoop, Kafka, Cloudera, MapReduce, HDFS, Hive, Azure Data Factory, Databricks
+Cloud Platform - Azure Data Factory (ADF), Databrick, Azure Synapse, AWS 
+Operating Systems - Linux, Windows, UNIX
+Databases - MySQL, SQL Server, NoSQL, Snowflake, Oracle
+Development Methods - Agile/Scrum
+IDE's - IntelliJ, Jupiter Notebook, DBeaver, MySQL Workbench, PyCharm, Visual Studio
+Data Visualization - Tableau, Power-BI, Splunk, Excel, Denodo
+
+EDUCATION:
+Master of Computer and Information Science                                                                                                             January 2020 -December 2021
+Cleveland State University, Ohio, USA
+Courses - Enterprise Database, Business Intelligence, Advanced System Analysis and Design, Managing Network and Security Risks, Business Analysis, Data Mining, HR management, Emerging Technologies, Machine Learning.
+Certifications:
+AWS Certified Data Engineer - Associate, Oracle certified - Java Fundamentals, Java Core, Microsoft certified - SQL Developer, Microsoft certified Data Analyst Associate.
+
+PROFESSIONAL EXPERIENCE
+Data Engineer 
+Nomura, New York City, NY   						                                                November 2021 to Present
+Supporting the mainstream application that facilitates the users to publish and download the feed files from the application UI at Nomura. 
+Responsibility: 
+•	Collaborated in Agile settings with application leads to comprehensively document product requirements using Confluence, Jira. Organizing regular scrum calls to get updates on the assigned Jiras, also meetings with end users and IT teams to gather and document functional and technical requirements.
+•	Developing detailed test plans to ensure product quality and functionality in the Data Management Technology domain. Working closely with QA team representing Developers for product testing and QA sign-off documentation.
+•	Experienced with version control Systems like Git, GitHub to keep the versions and configurations of the code organized. Worked to update all the IDE from Java 8 to Java 11+, migrated all the dependencies from Java 8 to latest stable versions Java 11+.
+•	Handled huge volumes of data in the form of feed-files that are published and downloaded globally 24x7 through the application. Also, provide constant support to the Users/Production team to handle issues by troubleshooting and errors handling through problem solving techniques.
+•	Excelled in maintaining Quality Assurance protocols by employing effecting cleaning and monitoring techniques in ETL processing and deploying.
+•	Established Python (NumPy and Pandas) and shell-script jobs in Java based project to collect server and service-level statistics, displayed on Splunk portal via Splunk forwarder for batch processing/real-time data for infrastructure monitoring and management. Excel in generating Splunk dashboards, scheduling jobs, forwarding data using Splunk, creating advanced visualizations and analyzing Splunk logs.
+•	Leveraged in SQL IDEs like Rapid SQL and MySQL Workbench to extract and modify data in the MySQL/SQL Server/Oracle database. Involved in performance tuning and unit testing for SQL and PL/SQL code and used SQL, Transact SQL, and PL/SQL are extensively used to write stored procedures, functions, packages, and triggers.
+•	Generated reports and actively monitored application vulnerabilities through Power BI/Tableau views, Dashboards to track weekly progress and addressing vulnerabilities.
+•	Collaborated with Denodo to automate weekly migration project jobs, tracking downstream application migration status, and extracting relevant reports. Also, responsible for Designing and creating data service layer in Denodo and providing for downstream application UI that displays stats on dashboard.
+•	Managing service deployments using Jenkins, Mavin, EOS and accessing maintenance, status, deployments, and logs efficiently. 
+•	Orchestrated jobs through Jenkins and performed code changes using IntelliJ IDE. Proficiently managed Linux boxes using MobaXterm and Putty. Hands-on with Remote desktop connection to handle Windows servers.
+•	Contributed for setting up Production, and non-production environments of new data centers of the application also deployed, maintained jobs and micro-services as part of development and infrastructure management.
+•	Architect & implement medium to large scale BI solutions on Azure using Azure Data Platform services (Azure Data Lake, Data Factory, Data Lake Analytics, Stream Analytics, Azure SQL DW, HD Insight/Databricks, NoSQL DB). Design & implement migration strategies for traditional systems on Azure (Lift and shift/Azure Migrate, other third-party tools.
+•	Extract Transform and Load data from Sources Systems to Azure Data Storage services using a combination of Azure Data Factory, T-SQL, Spark SQL and U-SQL Azure Data Lake Analytics. Data Ingestion to one or more Azure Services (Azure Data Lake, Azure Storage, Azure Blob Storage, Azure SQL, Azure DW) and processing the data in In Azure Databricks.
+•	Documented project information on Confluence, maintaining test evidence and production/non-production change records. Contributing to design new application UI by creating mockup screens using Balsamiq Wireframes.
+•	Familiarity with Infrastructure as Code (IACs) for resource requests and access. Engaging with raising Change Management tickets using ServiceNow to handle the production releases by communicating with relevant teams to get approvals and clearances from Change Admin Board as part of Change Management tasks.
+•	Played a pivotal role in migrating the application from a legacy platform to the NPC platform, including database migration from MySQL to SQL Server and Managed application environment on the Nomura Private Cloud (NPC) platform, supporting RHEL server dependencies.
+•	Generated ETL scripts and developed ETL pipelines using Azure Data Factory, Airflow, Informatica, Talend and SSIS to transform, flatten, and enrich data from source to target utilizing various RDBMS.
+•	Created and maintained online help and support procedures that help users to engage with production team and developers for quick user assistance.
+•	Prepared and delivered presentations to communicate analysis results to senior stakeholders and IT management. Demonstrated a strong understanding of business and data analysis, applying expertise to solve complex problems.
+•	Focused on defining requirements related to scaling and resilience of systems as part of Infrastructure Management through CMDB, RHEL and contributed by providing L3 Support.
+•	Applied a proven track record of business and data analysis on large and intricate problems for data-driven decision-making.
+•	Developed Linux bash scripts and utilized Python packages Pandas, NumPy, ML-Lib, Matplotlib for software development life cycle (SDLC).
+•	Applied a sound understanding of the Software Development Life Cycle (SDLC), DevOps processes, and Agile methodologies to projects.
+Environment:  Analytics, Git, Autosys, Splunk, Power BI, Denodo, EOS, Confluence, Nomura Private Cloud, IntelliJ, Linux, IAC, Nexus, Spark SQL, Python, SQL, Java, Oracle, Spark, Airflow, RHEL, ETL, Informatica, Data warehousing, CI/CD (Jenkins, Docker), MDM, RDBMS, Bash, Shell Scripting.
+
+Data Analyst
+Yana Software Private Limited Hyderabad, India                                                                                                  October 2017 to November 2019
+Responsibility:
+•	Worked with Business users during requirements gathering and business analysis to prepare high-level Logical Data Models and Physical Data Models.
+•	Extensively used Erwin r9.5 to design Logical/Physical Data Models, relational database design, forward/reverse engineering, publishing Data Model to acrobat files, created Erwin reports in HTML, RTF format depending upon the requirement, Published Data Model in the model mart, created naming convention files, coordinated with DBAs to apply the Data Model changes.
+•	Designed ER diagrams, logical model (relationship, cardinality, attributes, and candidate keys), and physical data models (capacity planning, object creation, and aggregation strategies) as per business requirements and involved in documentation of Data Modeler/Data Analyst and ETL specifications for Data warehouse with Erwin r9.6.
+•	Responsible for developing data pipeline with Oracle Data Integration (ODI) to extract the data from weblogs and store in HDFS and worked extensively with Sqoop for importing metadata from Oracle.
+•	Established Jenkins pipelines for service deployment, actively monitoring logs during deployment processes.
+•	Orchestrated automated deployments using Docker Compose, enabling scalable application deployments by managing containerized services. Implemented a build stage to compile microservices and push Docker container images to a private Docker registry, streamlining the deployment process.
+•	Implemented Auto-scaling and Elastic Load Balancer features on EC2 instances to ensure optimal application performance during periods of unexpected traffic. 
+•	Utilized Git for source code version control and JIRA for efficient issue tracking and project management and worked effectively within a dynamic, deadline-driven team environment, following agile methodologies.
+•	Actively participated in meetings, provided weekly status reports, and engaged in client interactions for gathering and refining project requirements showcasing excellent communication skills.
+•	Documented the whole process of working with Tableau Desktop, installing Tableau Server, and evaluating Business Requirements.
+•	Created, analyzed several Dashboards, reports developed by Power BI, Tableau, Excel and presented them to the managerial level stakeholders and teammates.
+•	Experience managing Azure Data Lakes and data Lake analytics and an understanding of how to integrate with other Azure services and Azure Data Factory. 
+•	Generates ETL programs for data extraction, transformation and loading using Informatica and created ETL pipelines in and out of data warehouse using combination of python and Snowflake SQL writing SQL queries against snowflake.
+•	Created, linked different services to land the data from different source to Azure Data Factory. Designed and created optimal pipeline architecture on Azure platform.
+•	Predominantly using UNIX shell-scripting, Python and Azure data Factory, Data warehouse, also Snow pipe with Snowflake databases for meeting end requirements and building scalable real-time systems. 
+Environment: Analytics, Git, Jira Power BI, Tableau, Azure Data Factory, IntelliJ, Linux, Spark, Python, SQL, Java, Oracle, Airflow, EC2, RHEL, ETL, Informatica, Data warehousing, CI/CD (Jenkins, Docker), RDBMS, Bash, Shell Scripting, Excel.
+
+PROJECTS                                                                                                                                                                                       
+Airbnb booking dataset Analysis
+Developed a data model by processing large datasets, enabling predictive analysis. Analyzed Airbnb booking patterns in and around New York City to gain insights into user behavior and created interactive visualizations using Power BI.
+Missing Child Identification System, using deep learning 
+A deep learning model is trained to correctly identify the missing, using the facial image uploaded by the public. The Convolutional Neural Network (CNN), a highly effective deep learning technique for image-based applications is adopted here for face recognition.
+Yelp Dataset Challenge, using Advance Data Science
+Predicted new business ratings with an accuracy of 84% using Boosted Decision Tree Algorithm & Microsoft Azure ML Studio. Created a recommendation engine (content & Collaborative) based on user activities using R and Azure ML
+

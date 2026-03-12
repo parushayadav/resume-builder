@@ -1,0 +1,143 @@
+## STANDARD INSURANCE COMPANY
+**Data Engineer | Smart Claims Assistant (SCA) Project**  
+**March 2025 - Present**
+ 
+### PROFESSIONAL OVERVIEW
+Led end-to-end data engineering initiatives for the Smart Claims Assistant (SCA) project, an AI-powered automation system processing 1,000+ daily insurance claims. Architected and implemented streaming data pipelines, real-time ingestion systems, and machine learning infrastructure on Azure Databricks, achieving 75% performance optimization and transitioning legacy batch processes to event-driven architecture.
+ 
+### CORE TECHNICAL COMPETENCIES
+**Cloud & Big Data:** Azure Databricks, Azure Event Hubs, Azure Document Intelligence, Delta Live Tables (DLT), Unity Catalog, DBFS, Azure Logic Apps  
+**Programming & Frameworks:** Python, PySpark, SQL, Pytest, Poetry, YAML, Terraform  
+**Data Engineering:** Streaming ETL Pipelines, Real-time Data Processing, Data Quality Validation, Schema Evolution, Checkpoint Management  
+**Development Tools:** Git, Azure DevOps, CI/CD Pipelines, DAB (Databricks Asset Bundles), REST APIs  
+**Databases & Systems:** Delta Lake, FileNet, Salesforce (SFDC), Unity Catalog Tables  
+**Architecture Patterns:** Event-Driven Architecture, Microservices, UDF Optimization, Map Partitioning, Idempotent Processing  
+ 
+---
+ 
+### KEY CONTRIBUTIONS & ACHIEVEMENTS
+ 
+#### 1. STREAMING DATA ARCHITECTURE & REAL-TIME PROCESSING
+- **Designed and implemented event-driven streaming architecture** transitioning from batch processing to real-time ingestion using Azure Event Hubs, processing claims as they arrive for sub-second latency
+- **Architected document-based ingestion pipeline** refactoring claim-level processing to document-level granularity, improving data processing efficiency by 75% through UDF optimization and intelligent repartitioning
+- **Built streaming job for SCA delivery** triggering on writes to augmentation tables with microbatch processing, replacing hourly batch jobs with real-time payload delivery to RPA systems
+- **Implemented checkpoint-based streaming logic** ensuring exactly-once processing semantics, idempotency, and recovery from failures without data loss or duplication
+- **Optimized CSR update streaming job** using map partitioning instead of UDF-based processing, improving scalability and reducing computational overhead
+ 
+#### 2. DATA PIPELINE DEVELOPMENT & OPTIMIZATION
+- **Developed Delta Live Tables (DLT) pipelines** for standardized data ingestion from multiple sources (FileNet, Salesforce, Vision System events) into bronze, silver, and gold layers
+- **Engineered historical document ingestion system** processing 4.73M FileNet documents with 64.4% success rate, implementing two-flag checkpoint system to prevent infinite loops and handle failures gracefully
+- **Implemented dynamic repartitioning logic** calculating optimal partitions based on cluster size (`max(spark.sparkContext.defaultParallelism * 2, 16)`) for efficient distributed processing
+- **Built retry mechanism for failed claims** creating separate batch job running every 30 minutes to reprocess failed deliveries, reducing reprocessing overhead in primary streaming jobs
+- **Designed date-based filtering for historical data** comparing FileNet DateCreated with Claim Summary lastmodifieddate to ensure temporal consistency for training data
+ 
+#### 3. DATA INTEGRATION & API DEVELOPMENT
+- **Integrated Salesforce API queries** extracting claim status, policy details, and benefit information with complex filtering logic to skip claims in terminal states (Recommending Approval/Denial)
+- **Implemented FileNet document retrieval** querying missing metadata fields (client_id, group_id, policy_id) to enrich ingestion payloads before downstream processing
+- **Built cross-system data reconciliation** extracting BCClaimID from Salesforce as source of truth, replacing auto-generated IDs to maintain consistency across ingestion and delivery systems
+- **Developed webhook notification system** using Azure Logic Apps to send job failure/success alerts to Teams channels and email for production monitoring
+- **Created CV (ClaimVantage) integration layer** querying claim summary status with filters on Claim ID, Policy ID, and Group ID for eligibility decisioning
+ 
+#### 4. DATA QUALITY & TESTING FRAMEWORKS
+- **Architected comprehensive unit testing framework** achieving 100% test coverage for core modules with 186 tests for vision system classifier and 42 tests for AI-DPE-SCA repository
+- **Built reusable Data Quality Validation framework** using Abstract Base Classes with 3 validators (Schema, Completeness, Integrity) driven by YAML configuration files, producing JSON/Markdown reports
+- **Integrated CI/CD test automation** configuring PR build validation pipelines with automated pytest execution, AI code review, and security scans on Azure DevOps
+- **Developed modular SQL unit tests** isolating query components (WHERE clauses, JOIN logic) for targeted validation with fixture-based testing and mocking strategies
+- **Implemented regression testing strategy** for API → Database → Streaming jobs covering schema evolution, data integrity, and streaming semantics
+ 
+#### 5. PRODUCTION DEPLOYMENT & OBSERVABILITY
+- **Led dark deployment to production** for ai-dpe-sca repository implementing streaming jobs while maintaining backward compatibility with existing batch processes
+- **Configured multi-node autoscaling clusters** (8-32 workers) with Delta optimization configs for historical document processing, replacing single-node architecture
+- **Implemented comprehensive logging and monitoring** creating payload_log and csr_update_log tables tracking delivery status, timestamps, and failure reasons
+- **Built operational dashboards** using Databricks SQL Analytics for real-time monitoring of ingestion rates, processing latency, and failure patterns
+- **Parameterized environment configurations** supporting PROD, SYS, ACC FileNet instances with environment-specific credentials for testing lower environments
+ 
+#### 6. REPOSITORY MANAGEMENT & CODE QUALITY
+- **Refactored ai-bronze-sca repository** standardizing naming conventions (zz_ prefix for dev_sandbox), centralizing variables in databricks.yml, and migrating to ai-utils modules
+- **Established developer etiquette standards** implementing code review processes, documentation requirements, and branching strategies across 5 repositories (ai-bronze-sca, ai-dpe-sca, ai-utils, vision-system, vision-system-classifier)
+- **Migrated from legacy modules** replacing deprecated salesforce_utils and databricks_api with centralized ai-utils.salesforce_utils for consistency
+- **Version controlled infrastructure** managing Databricks Asset Bundles (DAB), job configurations, pipeline definitions, and deployment scripts in Git
+- **Documented technical implementations** maintaining comprehensive README files, RELEASENOTES, and Confluence pages for knowledge transfer and onboarding
+ 
+#### 7. CONTRACT INGESTION & PROVISION EXTRACTION (Q1 2026)
+- **Designed contract ingestion architecture** defining provision-centric data model with per-provision effective dating and amendment chain resolution logic
+- **Mapped UWA proven patterns** adapting existing FileNet → raw → parsed → assembled → curated layers from Underwriting Assistant to SCA use case
+- **Architected Azure Document Intelligence integration** for parsing PDF contracts, amendments, and certificates with varying structures and lengths
+- **Defined 5-sprint Q1 delivery roadmap** (Jan 27 - Apr 7, 2026) breaking down contract ingestion into incremental milestones for daily ingestion and version handling
+- **Built storage solution for versioned contract provisions** implementing class hierarchy and incremental ingestion logic for daily FileNet evaluation
+ 
+#### 8. GROUND TRUTH DATA UNIFICATION
+- **Consolidated Ground Truth data sources** analyzing 3 tables (document_type_annotated, vsa_fields_annotated, claim_summary) with 60+ unique fields for schema alignment
+- **Designed unified schema** standardizing field names (document_id vs doc_id, filepath vs doc_path), formats, and structures across historical processing, validation UI, and evaluation pipelines
+- **Built consolidated field mapping** covering 50+ ERS/APS extraction fields ensuring consistency for ML model training and evaluation harness
+- **Implemented sca_fields_annotated table** building ground truth from Validation UI and SCA compound system sources with proper lineage and audit columns
+- **Validated data quality** checking NULL behavior, identifying naming inconsistencies, and ensuring no data corruption across multiple pipeline outputs
+ 
+#### 9. PERFORMANCE TUNING & OPTIMIZATION
+- **Achieved 75% process time reduction** through UDF integration, repartitioning strategies, and document-level processing granularity in ingestion jobs
+- **Resolved Delta Lake snapshot isolation issues** adding REFRESH TABLE commands and 5-second delays to force transaction log sync, preventing reprocessing of updated records
+- **Optimized batch processing** implementing fixed-size batches (5,000 records) with smart checkpoint logic (is_scanned vs is_processed flags) to handle failures without blocking progress
+- **Fixed infinite loop issues** in batch mode where failed records blocked processing queue by introducing two-flag checkpoint system separating selection from success
+- **Improved SQL query efficiency** refactoring from batched queries with large IN clauses to single UPDATE operations with improved logging
+ 
+#### 10. CROSS-FUNCTIONAL COLLABORATION & LEADERSHIP
+- **Collaborated with RPA team** coordinating payload delivery format, BCClaimID reconciliation, and AI Sandbox environment setup for UAT testing
+- **Partnered with Data Science team** providing 3.03M historical documents and ground truth data for model training, evaluation, and experimentation
+- **Worked with infrastructure teams** (Colby, Varsha, Siri) setting up Event Hubs, FileNet permissions, and nonprod environment access for testing
+- **Conducted knowledge transfer sessions** documenting implementation patterns, troubleshooting guides, and operational procedures for team members
+- **Participated in sprint planning and demos** presenting technical work to Product Managers (Rob Clark, Kevin) and Business Operations stakeholders
+ 
+---
+ 
+### NOTABLE PROJECT DELIVERABLES
+ 
+**Repositories Owned/Contributed:**
+- ai-bronze-sca: Bronze layer ingestion pipelines with DLT
+- ai-dpe-sca: Data Processing Engine with streaming jobs
+- ai-utils: Shared utilities (Salesforce, Databricks API, FileNet modules)
+- vision-system-classifier: ML classifier with 186 unit tests, 100% coverage
+- ai-cicd-template: CI/CD pipeline templates and deployment scripts
+ 
+**Production Systems Deployed:**
+- Real-time document ingestion streaming job (ai-bronze-sca)
+- CSR update streaming job with retry mechanism (ai-dpe-sca)
+- Historical FileNet ingestion system (4.73M documents processed)
+- Webhook notification system (Teams/Email alerts)
+- Data quality validation framework (CLI tool with YAML configs)
+ 
+**Technical Innovations:**
+- Two-flag checkpoint system for fault-tolerant batch processing
+- Configuration-driven data validation framework with 3 validator types
+- Dynamic repartitioning based on cluster parallelism
+- Event-driven architecture replacing batch patterns
+- Unified ground truth schema across multiple pipelines
+ 
+**Key Metrics:**
+- 75% performance improvement in ingestion processing time
+- 4.73M historical documents ingested (3.03M successful, 64.4% success rate)
+- 186 unit tests implemented with 100% core module coverage
+- 42 SQL unit tests for streaming job validation
+- 1,000+ daily claims processed in real-time (reduced from hourly batches)
+ 
+---
+ 
+### TECHNICAL PROBLEM-SOLVING EXAMPLES
+ 
+**Challenge:** Infinite loop in batch processing where failed records blocked progress
+**Solution:** Designed two-flag checkpoint system (is_scanned for selection, is_processed for success), added Delta table refresh commands, and implemented query builder refactoring
+ 
+**Challenge:** UDF limitations preventing Spark SQL operations in ingestion job
+**Solution:** Refactored filtering logic to upstream read-cv job, implemented map partitioning in CSR update job, and optimized with dynamic repartitioning
+ 
+**Challenge:** BCClaimID inconsistency between systems (AI sandbox auto-generation vs Salesforce)
+**Solution:** Extracted BCClaimID directly from Salesforce via CV query as source of truth, overriding auto-generated values
+ 
+**Challenge:** 35% document skip rate due to invalid FileNet metadata (DateCreated > LastModifiedDate)
+**Solution:** Implemented date comparison logic with explicit handling of NULL/missing dates, comprehensive logging for skipped records
+ 
+**Challenge:** Missing metadata fields (client_id, group_id, policy_id) from CIS API
+**Solution:** Built FileNet query enrichment layer retrieving missing fields before CV queries and ViS job parameter population
+ 
+---
+ 
+This content provides comprehensive coverage of your work suitable for multiple data engineering positions. You can extract specific sections based on the job requirements (streaming focus, testing focus, cloud architecture, etc.).

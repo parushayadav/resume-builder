@@ -1,0 +1,165 @@
+CHIDVILAS PARUSHA
+parushacv@gmail.com | +1 9196415039 | LinkedIn Profile
+___________________________________________________________________________________________________________
+
+PROFESSIONAL SUMMARY
+Results-driven Data Engineer and Architect with 8+ years of expertise building enterprise-scale cloud data platforms and AI/ML infrastructure on Azure. Demonstrated success designing and deploying real-time streaming architectures (processing 1,000+ daily claims, 4.73M documents, petabyte-scale financial data) with 75%+ performance optimization through intelligent partitioning and system design. Expert in end-to-end data engineering spanning ETL pipeline development, advanced analytics (vector search, LLM sentiment analysis, recommendation engines), data quality validation, and cloud migration strategies. Proficient in Python, PySpark, SQL, and modern Azure stack (Databricks, Event Hubs, Data Factory, Synapse, Delta Lake). Strong background in cross-functional collaboration with Data Science teams for ML operationalization, infrastructure automation via CI/CD (Azure DevOps, Terraform), and governance frameworks (Unity Catalog, compliance). Proven ability to architect solutions handling structured, semi-structured, and unstructured data at massive scale while maintaining data quality, exactly-once semantics, and production reliability.
+
+TECHNICAL SKILLS
+Cloud & Data Platforms: Azure Databricks, Azure Data Factory, Azure Synapse Analytics, Azure Event Hubs, Azure Data Lake Storage, Delta Lake (with Unity Catalog), Delta Live Tables (DLT), Medallion Architecture, Apache Spark, Apache Hadoop, Apache Kafka, HDFS
+
+AI & Analytics Technologies: Large Language Models (LLM), Vector Search & Embeddings, Sentiment Analysis, Recommendation Engines (Content-based & Collaborative Filtering), Pandas/NumPy, Scikit-learn
+
+Programming Languages: Python (primary), PySpark, SQL (T-SQL, Spark SQL), Bash, YAML, XML
+
+Data Engineering Patterns: Streaming ETL Pipelines, Real-time Processing, Event-Driven Architecture, Checkpoint Management, Exactly-Once Semantics, Data Quality Validation, Schema Evolution, Two-Flag Checkpoint Systems, Dynamic Repartitioning
+
+ETL & Data Integration: Azure Data Factory, Apache Airflow, Oracle Data Integration (ODI), Informatica, SSIS, Sqoop, Salesforce API Integration, FileNet API, Azure Logic Apps, REST APIs, Webhook Systems, SnowPipe
+
+CI/CD & Infrastructure: Azure DevOps, Jenkins, Docker, Docker Compose, Terraform (Infrastructure as Code), Databricks Asset Bundles (DAB), Git/GitHub, Poetry, Pytest, CI/CD Pipeline Automation, PR Build Validation
+
+Databases & Data Warehousing: Delta Lake (Unity Catalog), SQL Server, Oracle, MySQL, Snowflake, NoSQL databases, RDBMS Architecture
+
+Data Visualization & Monitoring: Power BI, Tableau, Splunk, Excel, Custom Dashboards, Azure Monitor, Real-time Alerting
+
+Development Tools & IDEs: PyCharm, IntelliJ IDEA, Jupyter Notebook, DBeaver, Visual Studio Code, ERWin Data Modeling
+
+Infrastructure & Systems: Azure Private Cloud (NPC/Nomura Private Cloud), RHEL Linux, Windows, UNIX, EC2 Auto-scaling, Elastic Load Balancer, Multi-region Azure Deployments, CMDB, ServiceNow
+
+Development Methodologies: Agile/Scrum, Test-Driven Development (TDD), Code Review Standards, Documentation Best Practices, Continuous Integration/Continuous Deployment (CI/CD)
+
+EDUCATION
+Master of Business Administration in Project Management                                              January 2025 - Present
+University of the Cumberlands, Kentucky, USA
+
+Master of Computer and Information Science                                                          January 2020 - December 2021
+Cleveland State University, Ohio, USA
+Relevant Courses: Enterprise Database, Business Intelligence, Advanced System Analysis, Machine Learning, Data Mining, Managing Network and Security Risks
+
+Certifications:
+• Microsoft Certified: Fabric Data Engineer Associate
+• Microsoft Certified: Azure AI Engineer Associate
+• AWS Certified Data Engineer – Associate
+
+PROFESSIONAL EXPERIENCE
+
+Data Engineer
+Standard Insurance Company, Remote                                                       March 2025 - Present
+
+Smart Claims Assistant (SCA) Project - AI-powered insurance claims automation system using streaming data pipelines and real-time processing to handle 1,000+ daily claims with 75% performance optimization.
+
+Responsibilities:
+• Designed and implemented event-driven streaming architecture transitioning from batch to real-time ingestion using Azure Event Hubs, achieving sub-second latency for claim processing
+• Architected document-level ingestion pipeline improving processing efficiency by 175% through UDF optimization and intelligent repartitioning strategies
+• Built streaming jobs triggering on augmentation table writes with microbatch processing, replacing hourly batch jobs with real-time payload delivery to RPA systems
+• Implemented checkpoint-based streaming logic ensuring exactly-once processing semantics, idempotency, and graceful failure recovery without data duplication
+• Optimized CSR update streaming job using map partitioning, improving scalability and reducing computational overhead
+• Developed Delta Live Tables (DLT) pipelines for standardized ingestion from multiple sources (FileNet, Salesforce, Vision System) into bronze/silver/gold layers
+• Engineered historical document ingestion system processing 4.73M FileNet documents with 64.4% success rate using two-flag checkpoint system
+• Implemented dynamic repartitioning logic calculating optimal partitions based on cluster size for efficient distributed processing
+• Built Python-based retry mechanism for failed claims with separate batch job running every 30 minutes to minimize primary job overhead
+• Integrated Salesforce API queries extracting claim status, policy details, and benefit information with complex filtering logic
+• Created comprehensive CI/CD test automation achieving 100% coverage for core modules with 186 unit tests using pytest
+• Built reusable Data Quality Validation framework using Abstract Base Classes with YAML-driven configuration for automated validation and report generation
+• Implemented comprehensive logging and monitoring infrastructure tracking delivery status, timestamps, and failure patterns across production systems
+• Configured multi-node autoscaling clusters (8-32 workers) with Delta optimization for historical document processing
+• Established developer standards and code review processes across 5+ repositories maintaining code quality and consistency
+
+Skills:
+Azure Databricks, Azure Event Hubs, Delta Lake, DLT, Python/PySpark, SQL, Streaming ETL, Real-time Processing, Salesforce API Integration, Document Intelligence, CI/CD Automation, Pytest, 186+ Unit Tests (100% Coverage), YAML-driven Data Quality Validation
+
+
+Data Engineer
+Nomura, New York City, NY                                                                           November 2021 - February 2025
+
+Cloud modernization and AI-driven data platform architecture for petabyte-scale financial data processing on Azure cloud and Nomura Private Cloud (NPC).
+
+Responsibilities:
+• Architected and deployed Azure Data Platform solutions utilizing Azure Databricks, Data Factory, Synapse, Event Hubs, and Delta Lake for real-time financial data processing
+• Designed and implemented migration strategies transitioning legacy on-premises systems to Azure cloud and NPC using Lift-and-Shift and Azure Migrate approaches
+• Built Azure Data Factory ETL pipelines with dynamic parameterization supporting multiple data sources and destinations with complex transformation logic
+• Implemented streaming data ingestion on Azure Event Hubs processing high-frequency market feeds and transactional data with exactly-once semantics
+• Developed PySpark-based data processing jobs on Azure Databricks optimizing data transformation and aggregation for downstream AI model consumption
+• Integrated Azure Synapse Analytics for large-scale data warehousing supporting financial analytics, risk analysis, and reporting frameworks
+• Deployed AI/ML preprocessing pipelines using Python (Pandas, NumPy) preparing training datasets for machine learning models predicting market trends and anomalies
+• Configured Delta Lake tables with Unity Catalog for governance, enabling data lineage tracking and ensuring data quality across 50+ financial datasets
+• Built automated monitoring and alerting infrastructure using Azure Monitor and custom Python-based health checks for 24x7 production systems
+• Implemented comprehensive data quality validation frameworks using Python and SQL ensuring data consistency and integrity for regulated financial systems
+• Migrated application from legacy platforms to NPC with RHEL server dependencies, fully supporting Nomura's private cloud infrastructure
+• Orchestrated CI/CD pipelines on Azure DevOps with automated testing, code quality checks, and infrastructure-as-code deployments using Terraform and Python
+• Established Python-based job scheduling and monitoring using Apache Airflow managing 100+ daily ETL jobs across development, staging, and production environments
+• Leveraged Git and Azure DevOps for version control, collaborated with 15+ data engineers implementing code review standards and documentation best practices
+• Partnered with Data Science teams to operationalize ML models, building feature engineering pipelines and model serving infrastructure on Databricks
+• Created comprehensive Splunk dashboards and Power BI reports providing real-time visibility into data pipeline health, processing metrics, and business KPIs
+• Applied Infrastructure as Code (IAC) using Terraform and Python scripts for reproducible environment deployments across multi-region Azure infrastructure
+• Managed Change Management and compliance requirements for financial services, using CMDB and ServiceNow for audit trails and governance
+
+Skills:
+Azure Databricks, Azure Data Factory, Azure Synapse, Azure Event Hubs, Delta Lake, Unity Catalog, Python/PySpark, SQL, Apache Airflow, Real-time Streaming, AI/ML Preprocessing, CI/CD (Azure DevOps), Terraform (IAC), Splunk/Power BI, 100+ Daily ETL Jobs, NPC Cloud Migration, 50+ Financial Datasets, Exactly-once Semantics
+
+
+Data Analyst
+Cleveland State University, Ohio                                                                    January 2021 - December 2021
+
+Hospitality Analytics & Recommendation - EngineEnd-to-end data analytics platform for large-scale hospitality booking datasets with AI-powered recommendation systems and LLM-driven sentiment analytics supporting academic research.
+
+Responsibilities:
+• Engineered end-to-end data platform processing 100K+ large-scale hospitality booking datasets using Apache Spark and Delta Live Tables with medallion architecture (bronze/silver/gold layers)
+• Built comprehensive ETL pipelines for structured and unstructured data ingestion (CSV, JSON, images) into Azure Data Lake leveraging Python and PySpark for complex transformations
+• Implemented vector search-based recommendation engine using embeddings and similarity metrics to analyze user booking behavior patterns and pricing sensitivity
+• Deployed large language model (LLM)-driven analytics pipeline for sentiment analysis on 50K+ guest reviews, extracting actionable insights for service improvement and customer satisfaction tracking
+• Created comprehensive logging and tracking tables for ETL process monitoring enabling real-time troubleshooting and data quality validations across pipelines
+• Optimized Spark SQL queries for parallelized execution on Azure Databricks achieving 40% improvement in query execution time through intelligent partitioning strategies
+• Developed interactive Power BI dashboards visualizing booking trends, pricing dynamics, and occupancy rate forecasting for stakeholder reporting and business intelligence
+• Collaborated with academic advisors and data science faculty to translate business requirements into scalable data engineering solutions
+
+Skills:
+Apache Spark, Delta Lake, DLT, Medallion Architecture, Azure Data Lake, Python/PySpark, SQL, Vector Search, LLM Integration, Sentiment Analysis, 100K+ Booking Datasets, 50K+ Reviews Analyzed, 40% Query Optimization, Power BI BI Visualizations, Jupyter Notebook, Git
+
+Data Analyst
+Yana Software, Hyderabad, India                                                                    October 2017 - November 2019
+
+Enterprise data modeling, ETL pipeline development, and business intelligence solutions supporting large-scale analytics platforms with cloud integration.
+
+Responsibilities:
+• Worked with business users during requirements gathering to prepare high-level logical and physical data models
+• Used ERWin r9.5/r9.6 to design logical/physical data models, relational database design, and forward/reverse engineering
+• Designed ER diagrams, logical models (relationships, cardinality, attributes), and physical data models with capacity planning
+• Developed data pipeline with Oracle Data Integration (ODI) extracting data from weblogs and storing in HDFS using Sqoop
+• Established Jenkins pipelines for service deployment with active monitoring of logs during deployment processes
+• Orchestrated automated deployments using Docker Compose with build stages for microservices and Docker registry management
+• Implemented Auto-scaling and Elastic Load Balancer features on EC2 instances ensuring optimal application performance
+• Created and analyzed several dashboards and reports using Tableau Desktop, Tableau Server, Power BI, and Excel
+• Managed Azure Data Lakes and data lake analytics with integration to Azure Data Factory—generated ETL programs using Informatica
+• Utilized UNIX shell-scripting, Python, and Azure Data Factory for real-time systems using Snowflake with SnowPipe
+• Managed source code using Git and issue tracking with JIRA, working effectively within agile team environments
+• Provided weekly status reports and engaged in client interactions for requirements gathering and refinement
+
+Skills:
+ERWin, Oracle Data Integration (ODI), Apache Hadoop, Sqoop, Azure Data Lake, Azure Data Factory, Snowflake, SnowPipe, Python, SQL, Informatica ETL, Jenkins CI/CD, Docker Compose, EC2 Auto-scaling, Tableau, Power BI, Git, JIRA, Agile/Scrum
+
+TECHNICAL HIGHLIGHTS & INNOVATIONS
+
+Two-Flag Checkpoint System: Designed fault-tolerant batch processing with separate flags for selection (is_scanned) and processing success (is_processed), enabling recovery from failures without blocking progress or data duplication
+
+Configuration-Driven Validation Framework: Built reusable data quality validation framework using Abstract Base Classes with 3 validators (Schema, Completeness, Integrity) driven by YAML configurations producing JSON/Markdown reports
+
+Dynamic Repartitioning Strategy: Implemented intelligent Spark partitioning calculating optimal partition counts based on cluster parallelism ($maxWorkers * 2, minimum 16) improving distributed processing efficiency
+
+Event-Driven Architecture Migration: Transitioned enterprise systems from batch-centric to event-driven patterns using Azure Event Hubs, reducing processing latency and improving real-time decision making
+
+Unified Ground Truth Schema: Consolidated ground truth data from 3+ disparate sources (60+ fields) into single schema supporting ML model training, validation, and evaluation pipelines
+
+Streaming Job Optimization: Achieved 75% throughput improvement through UDF integration, intelligent partitioning, and document-level processing granularity in ingestion jobs
+
+Multi-Environment CI/CD Pipeline: Implemented comprehensive test automation with PR build validation, automated pytest execution, AI code review, and security scans on Azure DevOps
+
+KEY METRICS & IMPACT
+✓ 175% improvement in data ingestion processing time through optimization strategies
+✓ 4.73M historical documents successfully ingested and processed
+✓ 100% code coverage for core modules with 186+ unit tests implemented
+✓ 1,000+ insurance claims processed daily in real-time (vs. hourly batches previously)
+✓ Sub-second latency achieved in streaming architecture using Event Hubs
+✓ 64.4% success rate on large-scale historical data ingestion
+✓ Zero data loss across all production streaming jobs through exactly-once semantics
+✓ 5+ repositories managed with consistent code quality and developer standards

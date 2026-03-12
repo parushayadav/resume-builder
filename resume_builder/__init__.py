@@ -60,6 +60,27 @@ class ResumeBuilder:
         else:
             return formatter.format(personalized)
     
+    def personalize(self,
+                   resume: Resume,
+                   job_description: str,
+                   job_title: str,
+                   company: str) -> PersonalizedResume:
+        """
+        Personalize resume and return PersonalizedResume object
+        
+        Args:
+            resume: User's original resume
+            job_description: Full job description text
+            job_title: Position title
+            company: Company name
+            
+        Returns:
+            PersonalizedResume object
+        """
+        parsed_job = self.parser.parse(job_title, company, job_description)
+        personalized = self.rules_engine.personalize(resume, parsed_job)
+        return personalized
+    
     def get_analysis_metrics(self,
                             resume: Resume,
                             job_title: str,
